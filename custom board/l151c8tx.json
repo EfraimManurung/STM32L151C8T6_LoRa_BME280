@@ -1,0 +1,39 @@
+{
+  "build": {
+    "cpu": "cortex-m3",
+    "extra_flags": "-DSTM32L1 -DSTM32L151xB",
+    "f_cpu": "32000000L",
+    "mcu": "stm32l151c8xx",
+    "product_line": "STM32L151x8",
+    "variant":"C:/Users/frm19/.platformio/platforms/ststm32/boards/variants/L151C8TX"
+  },
+  "debug": {
+    "jlink_device": "STM32L151C8",
+    "openocd_target": "stm32l1",
+    "svd_path": "STM32L15x8.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "platforms": [
+    "ststm32"
+  ],
+  "name": "L151C8TX",
+  "upload": {
+    "maximum_ram_size": 10240,
+    "maximum_size": 65536,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "dfu", 
+      "serial"
+    ]
+  },
+  "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l151c8.html",
+  "vendor": "IoT-lab.org"
+}
